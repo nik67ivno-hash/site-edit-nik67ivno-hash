@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>PRESEMTACION</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* ====== MENÚ NAV ====== */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* ====== SECTIONS ====== */
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    article {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    article h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    /* ====== BOTÓN ====== */
+    .boton-enviar {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .boton-enviar:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
 <body>
-  <h1 font-size="12px" color:#234;>Prueba de INDEX</h1>
-  <p color:#232; font-size:23px; class="ENVI">ENVIAR</p>
+
+  <!-- ====== MENÚ DE NAVEGACIÓN ====== -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== SECCIONES ====== -->
+  <section id="home">
+    <article>
+      <h2>Home</h2>
+      <p>Bienvenido a nuestra página. Aquí encontrarás lo mejor en servicios y productos.</p>
+    </article>
+  </section>
+
+  <section id="servicios">
+    <article>
+      <h2>Servicios</h2>
+      <p>Ofrecemos una amplia gama de servicios profesionales para satisfacer tus necesidades.</p>
+    </article>
+  </section>
+
+  <section id="productos">
+    <article>
+      <h2>Productos</h2>
+      <p>Explora nuestros productos de alta calidad diseñados para ti.</p>
+    </article>
+  </section>
+
+  <section id="ubicacion">
+    <article>
+      <h2>Ubicación</h2>
+      <p>Nos encontramos en el centro de la ciudad, con fácil acceso desde cualquier punto.</p>
+    </article>
+  </section>
+
+  <section id="contacto">
+    <article>
+      <h2>Contacto</h2>
+      <p>Puedes comunicarte con nosotros llenando el siguiente formulario.</p>
+      <!-- Puedes agregar un formulario aquí si lo deseas -->
+      <button class="boton-enviar">ENVIAR</button>
+    </article>
+  </section>
+
 </body>
 </html>
